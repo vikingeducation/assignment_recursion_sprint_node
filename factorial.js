@@ -27,3 +27,4 @@ assert(factorialRecursive(4) === 24);
 assert(factorialRecursive(5) === 120);
 
 assert(factorialIterative(4) === 24);
+assert(factorialIterative(5) === 120);
