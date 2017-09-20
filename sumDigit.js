@@ -7,4 +7,14 @@ const sumDigitRecursive = n => {
   }
 };
 
-module.exports = { sumDigitRecursive };
+const sumDigitIterative = n => {
+  if (n < 10) {
+    return n;
+  } else {
+    return String(n)
+      .split("")
+      .reduce((sum, part) => sum + +part, 0);
+  }
+};
+
+module.exports = { sumDigitRecursive, sumDigitIterative };
