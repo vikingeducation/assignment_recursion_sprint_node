@@ -5,9 +5,7 @@
 
 var palindromeRecursive=(str)=>{
   if (str.length<2) return true;
-  console.log('str[0] = ', str[0], ', str[-1] = ', str[str.length-1])
-  if (str[0]!==str[str.length-1]) return false;
-  if (str[0]===str[str.length-1]) return palindromeRecursive(str.slice(1, -1))
+  return (str[0]!==str[str.length-1]) ? false : palindromeRecursive(str.slice(1, -1))
 }
 // console.log(palindromeRecursive('yty'), 'should be true')
 // console.log(palindromeRecursive('tyuu'), 'should be false')
@@ -24,7 +22,7 @@ var palindromeIterative = (str)=>{
     return true;
 }
 
-console.log(palindromeIterative('yty'), 'should be true')
-console.log(palindromeIterative('tyuu'), 'should be false')
-console.log(palindromeIterative('ytu'), 'should be false')
-console.log(palindromeIterative('ytty'), 'should be true')
+// console.log(palindromeIterative('yty'), 'should be true')
+// console.log(palindromeIterative('tyuu'), 'should be false')
+// console.log(palindromeIterative('ytu'), 'should be false')
+// console.log(palindromeIterative('ytty'), 'should be true')

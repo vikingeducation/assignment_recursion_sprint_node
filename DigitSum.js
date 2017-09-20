@@ -17,6 +17,14 @@ const sumdigRecursive = (num, acc=0, idx=0) => {
 
 console.log(sumdigRecursive(105))
 
+// another
+const anotherSumDigRecursive = num => {
+  (num < 10) ? num : num%10 + anotherSumDigRecursive(Math.floor(num/10))
+  }
+
+  return num % 10 + sumdigRecursive(Math.floor(num / 10));
+};
+
 
 const sumdigIterative = (n) => {
   let acc = 0;
