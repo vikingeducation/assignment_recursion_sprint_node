@@ -95,5 +95,17 @@ console.log("multiple recursion ,", multipleRecursionMadness("abb"));
 console.log("multiple recursion ,", multipleRecursionMadness("abad"));
 
 const palindromeIterative = str => {
-  return;
+  str = str.toLowerCase().split("").filter(char => /[a-z]/.test(char)).join("");
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] !== str[str.length - i - 1]) return false;
+  }
+  return true;
 };
+
+console.log("iteration");
+console.log(palindromeIterative("a"));
+console.log(palindromeIterative("aba"));
+console.log(palindromeIterative("abad"));
+console.log(palindromeIterative("a;lskdfj;lkjsdfFFFFFFFad"));
+console.log(palindromeIterative("Rise to vote, sir"));
+console.log(palindromeIterative("Able was I ere I saw Elba"));
