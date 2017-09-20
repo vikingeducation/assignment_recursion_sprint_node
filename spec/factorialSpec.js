@@ -1,4 +1,4 @@
-const { factorialRecursive } = require("../factorial");
+const { factorialRecursive, factorialIterative } = require("../factorial");
 
 const factorials = [
   1,
@@ -23,9 +23,17 @@ const factorials = [
 ];
 
 describe("The recursive factorial function", () => {
-  it("returns the correct factorial for a given n", () => {
+  it("recursively returns the correct factorial for a given n", () => {
     factorials.forEach((fact, n) => {
       expect(factorialRecursive(n)).toEqual(fact);
+    });
+  });
+});
+
+describe("The iterative factorial function", () => {
+  it("iteratively returns the correct factorial for a given n", () => {
+    factorials.forEach((fact, n) => {
+      expect(factorialIterative(n)).toEqual(fact);
     });
   });
 });
