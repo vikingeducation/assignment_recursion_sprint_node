@@ -1,9 +1,3 @@
-const factorialRecursive = n => {
-  if (n < 2) {
-    return 1;
-  } else {
-    return n * factorialRecursive(n - 1);
-  }
-};
+const factorialRecursive = n => (n < 2 ? 1 : n * factorialRecursive(n - 1));
 
 module.exports = { factorialRecursive };
