@@ -7,16 +7,16 @@
 // Write an iterative method sumdigIterative
 // which does the same iteratively.
 
-const sumdigRecursive = (n, acc=0, idx=0) => {
-  if (n.length) 
-  acc+=n[idx]
-  return sumdigRecursive(n, acc, ++idx)
-
-//  let arr = `${n}`.split('');
-  // const recursiveFxn = (arr) =>{
-  //   return Number(arr.pop()) + recursiveFxn(arr)
-  // }
+const sumdigRecursive = (num, acc=0, idx=0) => {
+  if (`${num}`.length === idx) return acc;
+  let numArr = `${num}`.split('')
+  acc+=Number(numArr[idx])
+  ++idx
+  return sumdigRecursive(num, acc, idx)
 };
+
+console.log(sumdigRecursive(105))
+
 
 const sumdigIterative = (n) => {
   let acc = 0;
@@ -26,5 +26,3 @@ const sumdigIterative = (n) => {
   }
   return acc;
 };
-
-console.log(sumdigIterative(103))
