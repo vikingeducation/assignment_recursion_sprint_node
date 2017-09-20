@@ -1,4 +1,4 @@
-const { palindromeRecursive } = require("../palindrome");
+const { palindromeRecursive, palindromeIterative } = require("../palindrome");
 
 const palindromes = [
   "risetovotesir",
@@ -24,6 +24,20 @@ describe("The recursive palindrome function", () => {
   it("recursively identifies non-palindromes as such", () => {
     notPalindromes.forEach(p => {
       expect(palindromeRecursive(p)).toBeFalsy();
+    });
+  });
+});
+
+describe("The iterative palindrome function", () => {
+  it("iteratively identifies palindromes as such", () => {
+    palindromes.forEach(p => {
+      expect(palindromeIterative(p)).toBeTruthy();
+    });
+  });
+
+  it("iteratively identifies non-palindromes as such", () => {
+    notPalindromes.forEach(p => {
+      expect(palindromeIterative(p)).toBeFalsy();
     });
   });
 });
