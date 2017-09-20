@@ -6,4 +6,12 @@ const palindromeRecursive = p => {
   }
 };
 
-module.exports = { palindromeRecursive };
+const palindromeIterative = p => {
+  while (p.length > 1) {
+    if (p[0] !== p.slice(-1)) return false;
+    p = p.slice(1, -1);
+  }
+  return true;
+};
+
+module.exports = { palindromeRecursive, palindromeIterative };
