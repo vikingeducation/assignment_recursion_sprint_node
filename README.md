@@ -12,3 +12,5 @@ Again and again and again and again and again...
 * Digit Sum
 
 * Palindrome
+
+* Word Finder
