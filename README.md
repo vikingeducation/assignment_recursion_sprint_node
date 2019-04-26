@@ -1,4 +1,3 @@
-# assignment_recursion_sprint_node
-Again and again and again and again and again...
+# Recursion Practice
 
-[A recursion assignment which uses Node for the Viking Code School](http://www.vikingcodeschool.com)
+Practice solving a few problems recursively. Practice solving a few problems recursively. Practice solving a few problems recursively. Practice solving a few problems recursively. Practice solving a few problems recursively. Practice solving a few problems recursively. Practice solving a few problems recursively. Practice solving a few problems recursively. Practice solving a few problems recursively. Practice solving a few problems recursively. Practice solving a few problems recursively. 
